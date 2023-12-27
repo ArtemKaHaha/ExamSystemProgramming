@@ -1,0 +1,10 @@
+#include <windows.h>
+
+__declspec(dllexport) float calculateLength(Point p)
+{
+    float length;
+
+    length = sqrt(pow(p.x2 - p.x1, 2) + pow(p.y2 - p.y1, 2));
+
+    return length;
+}
